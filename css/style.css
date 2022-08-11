@@ -1,0 +1,149 @@
+body {
+  background-color: #bfc0c0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4f5d75;
+  border-style: solid;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  padding: 20px;
+  display: block;
+}
+.titulo {
+  color: #ef8354;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 55px;
+}
+
+.hr {
+  color: #ef8354;
+}
+.texto-perfil {
+  color: red;
+  font-size: 20px;
+  font-family: "Lato", "Montserrat";
+  font-weight: bold;
+}
+
+.texto-carrito {
+  color: red;
+  font-size: 20px;
+  font-family: "Lato", "Montserrat";
+  font-weight: bold;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 34px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+  background-color: #a8c8dd;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container a {
+  color: black;
+}
+
+.monitor-logo {
+  display: flex;
+  margin-right: auto;
+}
+
+.contenedor-iconos-arriba {
+  display: flex;
+  justify-content: left;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.slider {
+  justify-content: center;
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.publicidad-logitech {
+  display: block;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.publicidad-arma-tu-pc {
+  display: flex;
+  justify-content: space-evenly;
+  height: 450px;
+  margin: 50px;
+ 
+}
+
+.arma-tu-pc {
+  padding: 10px;
+  border: 1px solid #4f5d75;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footerMap {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 48px;
+}
+.mapa {
+  height: 300px;
+  width: 400px;
+}
+.posicion-footer {
+  height: 300px;
+  width: 300px;
+}
+
+.contenedor-texto {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 48px;
+}
+
+.texto-quienes-somos {
+  font-size: 20px;
+  font-family: "Lato", "Montserrat";
+  font-weight: bold;
+}
+.texto-redes {
+  font-size: 40px;
+  font-family: "Lato", "Montserrat";
+  font-weight: bold;
+}
+
+.contenedor-iconos-redes {
+  display: flex;
+  gap: 8px;
+}
+.contenedor-iconos-redes i {
+  font-size: 40px;
+}
+
+.perfil {
+  height: 80px;
+  width: 80px;
+}
+
+.carrrito {
+  height: 80px;
+  width: 80px;
+}
