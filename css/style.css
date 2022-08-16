@@ -6,6 +6,7 @@ body {
   justify-content: space-around;
   background-color: #4f5d75;
   border-style: solid;
+  width: 100%;
 }
 .logo {
   height: 100px;
@@ -85,7 +86,43 @@ body {
   justify-content: space-evenly;
   height: 450px;
   margin: 50px;
- 
+}
+.container-destacados {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 550px;
+}
+.destacados-titulo {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lato", "Montserrat";
+  font-weight: bold;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: #4f5d75;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  padding: 1px;
+  background-color: rgba(240, 248, 255, 0.407);
+}
+.container-cards {
+  width: 100%;
+  align-items: center;
+  font-family: "Lato", "Montserrat";
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+.image-card {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 .arma-tu-pc {
@@ -146,4 +183,32 @@ body {
 .carrrito {
   height: 80px;
   width: 80px;
+}
+/* Media query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar {
+  }
+  .titulo {
+    font-size: 32px;
+  }
+  .card {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "div1 div2 div3"
+      "div1 div2 div3"
+      "div1 div2 div3";
+      width: auto 
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
