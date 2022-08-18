@@ -1,3 +1,8 @@
+h1{
+  color: #ef8354;
+}
+
+
 body {
   background-color: #bfc0c0;
 }
@@ -87,11 +92,24 @@ body {
   height: 450px;
   margin: 50px;
 }
+
+.arma-tu-pc {
+  padding: 10px;
+  border: 1px solid #4f5d75;
+}
+.imagen-vertical {
+  height: 30em;
+  width: 15em;
+}
+.publicidad-samsung {
+  height: 30em;
+  width: 30em;
+}
+
 .container-destacados {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 550px;
 }
 .destacados-titulo {
   text-align: center;
@@ -123,11 +141,6 @@ body {
   width: 70%;
   height: 70%;
   object-fit: contain;
-}
-
-.arma-tu-pc {
-  padding: 10px;
-  border: 1px solid #4f5d75;
 }
 
 .footer {
@@ -187,28 +200,40 @@ body {
 /* Media query */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .navbar {
+  .slider {
+    width: 100%;
   }
-  .titulo {
-    font-size: 32px;
-  }
-  .card {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "div1 div2 div3"
-      "div1 div2 div3"
-      "div1 div2 div3";
-    width: auto;
+  .container {
+    height: 70%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .slider {
+    width: 93%;
+  }
+  .container {
+    height: 50%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .slider {
+    width: 85%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .slider {
+    width: 75%;
+  }
+  .container {
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
