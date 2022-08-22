@@ -1,16 +1,19 @@
-h1{
+h1 {
   color: #ef8354;
 }
-
-
+html {
+  height: 100%;
+}
 body {
-  background-color: #bfc0c0;
+  background-color: whitesmoke;
+  margin: 0;
+  min-height: 100vh;
 }
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: #4f5d75;
-  border-style: solid;
+  background-color: #a22925;
+  border-style: groove;
   width: 100%;
 }
 .logo {
@@ -20,12 +23,35 @@ body {
   padding: 20px;
   display: block;
 }
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
 .titulo {
-  color: #ef8354;
-  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+  font-family: "Montserrat";
   font-size: 55px;
 }
 
+.contenedor-iconos-arriba {
+  display: flex;
+  justify-content: left;
+  margin-right: 50px;
+  margin-top: 30px;
+}
 .hr {
   color: #ef8354;
 }
@@ -47,18 +73,19 @@ body {
   text-decoration: none;
   font-size: 20px;
   padding: 14px 34px;
-  font-family: sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   display: inline-block;
   margin: 5px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
-  background-color: #a8c8dd;
+  background-color: #961f1f49;
 }
 .container {
   display: flex;
   justify-content: center;
+  
 }
 .container a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .monitor-logo {
@@ -66,12 +93,6 @@ body {
   margin-right: auto;
 }
 
-.contenedor-iconos-arriba {
-  display: flex;
-  justify-content: left;
-  margin-right: 50px;
-  margin-top: 30px;
-}
 .slider {
   justify-content: center;
   height: 50%;
@@ -142,10 +163,18 @@ body {
   height: 70%;
   object-fit: contain;
 }
+/* BOOTSTRAP PRUEBA */
+.header-contenedor {
+  background-color: rgb(50, 57, 35);
+}
+
+.row {
+}
 
 .footer {
   display: flex;
   justify-content: space-between;
+  
 }
 .footerMap {
   display: flex;
@@ -198,15 +227,6 @@ body {
   width: 80px;
 }
 /* Media query */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .slider {
-    width: 100%;
-  }
-  .container {
-    height: 70%;
-  }
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -215,6 +235,10 @@ body {
   }
   .container {
     height: 50%;
+    
+  }
+  .titulo {
+    font-size: 30px;
   }
 }
 
@@ -223,6 +247,9 @@ body {
   .slider {
     width: 85%;
   }
+  .titulo {
+    font-size: 40px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -230,7 +257,8 @@ body {
   .slider {
     width: 75%;
   }
-  .container {
+  .titulo: {
+    font-size: 50px;
   }
 }
 
