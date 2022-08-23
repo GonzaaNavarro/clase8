@@ -83,10 +83,12 @@ body {
 }
 
 .publicidad-arma-tu-pc {
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.img-publicidad {
   display: flex;
-  justify-content: space-evenly;
-  height: 450px;
-  margin: 50px;
+  justify-content: center;
 }
 
 .arma-tu-pc {
@@ -141,9 +143,6 @@ body {
 /* BOOTSTRAP PRUEBA */
 .header-contenedor {
   background-color: rgb(50, 57, 35);
-}
-
-.row {
 }
 
 .footer {
@@ -213,18 +212,16 @@ body {
   .titulo {
     font-size: 35px;
   }
-  .container {
+  .img-publicidad {
   }
 }
-
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .slider {
     width: 75%;
   }
-  .titulo: {
+  .titulo {
     font-size: 50px;
   }
 }
@@ -295,6 +292,7 @@ body {
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
