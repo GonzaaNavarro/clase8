@@ -5,17 +5,15 @@ html {
   height: 100%;
 }
 body {
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
   margin: 0;
   min-height: 100vh;
 }
-/* .navbar {
+.cards {
   display: flex;
   justify-content: space-around;
-  background-color: #a22925;
-  border-style: groove;
-  width: 100%;
-} */
+  font-size: 20px;
+}
 .logo {
   height: 100px;
   width: 100px;
@@ -40,33 +38,10 @@ body {
 .whatsapp-icon {
   margin-top: 13px;
 }
-.titulo {
-  color: #ffffff;
-  font-family: "Montserrat";
-  font-size: 55px;
-}
 
-.contenedor-iconos-arriba {
-  display: flex;
-  justify-content: left;
-  margin-right: 50px;
-  margin-top: 30px;
-}
-.hr {
-  color: #ef8354;
-}
-.texto-perfil {
-  color: red;
-  font-size: 20px;
-  font-family: "Lato", "Montserrat";
-  font-weight: bold;
-}
-
-.texto-carrito {
-  color: red;
-  font-size: 20px;
-  font-family: "Lato", "Montserrat";
-  font-weight: bold;
+.navbar-nav {
+  font-size: 16px;
+  justify-content: space-between;
 }
 
 .btn {
@@ -237,24 +212,12 @@ body {
   }
   .titulo {
     font-size: 35px;
-    
   }
-  .container{ 
-    
+  .container {
   }
- 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .slider {
-    width: 85%;
-  }
-  .titulo {
-    font-size: 50px;
-  }
-  
-}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -268,4 +231,75 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
