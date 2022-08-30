@@ -9,11 +9,7 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-.cards {
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-}
+
 .logo {
   height: 100px;
   width: 100px;
@@ -54,27 +50,6 @@ body {
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
   background-color: #961f1f49;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-.container a {
-  color: rgb(0, 0, 0);
-}
-
-.monitor-logo {
-  display: flex;
-  margin-right: auto;
-}
-
-.slider {
-  justify-content: center;
-  height: 50%;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .publicidad-logitech {
   display: block;
   height: 100%;
@@ -87,45 +62,26 @@ body {
   align-items: center;
 }
 .img-publicidad {
-  display: flex;
-  justify-content: center;
-}
-
-.arma-tu-pc {
-  padding: 10px;
-  border: 1px solid #4f5d75;
-}
-.imagen-vertical {
-  height: 30em;
-  width: 15em;
-}
-.publicidad-samsung {
-  height: 30em;
-  width: 30em;
+  display: grid;
+  justify-content: space-around;
 }
 
 .container-destacados {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  justify-items: center;
 }
 .destacados-titulo {
   text-align: center;
   font-size: 40px;
   font-family: "Lato", "Montserrat";
   font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
-.card {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  box-shadow: #4f5d75;
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-  padding: 1px;
-  background-color: rgba(240, 248, 255, 0.407);
-}
+
 .container-cards {
   width: 100%;
   align-items: center;
@@ -135,12 +91,17 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
 }
+.card {
+  display: flex;
+  margin-top: 10px;
+  text-align-last: center;
+}
 .image-card {
   width: 70%;
   height: 70%;
   object-fit: contain;
 }
-/* BOOTSTRAP PRUEBA */
+
 .header-contenedor {
   background-color: rgb(50, 57, 35);
 }
@@ -202,17 +163,17 @@ body {
 /* Media query */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) {
   .slider {
     width: 93%;
   }
-  .container {
-    height: 50%;
-  }
+
   .titulo {
     font-size: 35px;
   }
-  .img-publicidad {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -235,6 +196,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 /*:::::Pie de Pagina*/
 .pie-pagina {
   width: 100%;
