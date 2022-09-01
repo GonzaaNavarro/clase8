@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "desafio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o -css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaaNavarro/clase8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaaNavarro/clase8/issues"
+  },
+  "homepage": "https://github.com/GonzaaNavarro/clase8#readme",
+  "description": ""
+}
