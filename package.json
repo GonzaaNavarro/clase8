@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "node-sass": "^7.0.1"
+<<<<<<< HEAD
   },
   "name": "desafio",
   "version": "1.0.0",
@@ -21,4 +22,7 @@
   },
   "homepage": "https://github.com/GonzaaNavarro/clase8#readme",
   "description": ""
+=======
+  }
+>>>>>>> 2085b52401b9216eb586248b0e1dfc0e25b29a94
 }
