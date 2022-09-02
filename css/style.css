@@ -1,4 +1,3 @@
-
 html {
   height: 100%;
 }
@@ -8,13 +7,6 @@ body {
   min-height: 100vh;
 }
 
-.logo {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  padding: 20px;
-  display: block;
-}
 .whatsapp {
   position: fixed;
   width: 60px;
@@ -48,21 +40,6 @@ body {
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
   background-color: #961f1f49;
 }
-.publicidad-logitech {
-  display: block;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-}
-
-.publicidad-arma-tu-pc {
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-}
-.img-publicidad {
-  display: grid;
-  justify-content: space-around;
-}
 
 .container-destacados {
   display: grid;
@@ -80,15 +57,6 @@ body {
   flex-direction: column;
 }
 
-.container-cards {
-  width: 100%;
-  align-items: center;
-  font-family: "Lato", "Montserrat";
-  font-weight: bold;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 10px;
-}
 .card {
   display: flex;
   margin-top: 10px;
@@ -100,54 +68,11 @@ body {
   object-fit: contain;
 }
 
-.header-contenedor {
-  background-color: rgb(50, 57, 35);
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-}
-.footerMap {
-  display: flex;
-  align-items: center;
-  width: 40%;
-  gap: 48px;
-}
 .mapa {
   height: 300px;
   width: 400px;
 }
-.posicion-footer {
-  height: 300px;
-  width: 300px;
-}
 
-.contenedor-texto {
-  display: flex;
-  align-items: center;
-  width: 40%;
-  gap: 48px;
-}
-
-.texto-quienes-somos {
-  font-size: 20px;
-  font-family: "Lato", "Montserrat";
-  font-weight: bold;
-}
-.texto-redes {
-  font-size: 40px;
-  font-family: "Lato", "Montserrat";
-  font-weight: bold;
-}
-
-.contenedor-iconos-redes {
-  display: flex;
-  gap: 8px;
-}
-.contenedor-iconos-redes i {
-  font-size: 40px;
-}
 
 .perfil {
   height: 80px;
