@@ -8,4 +8,15 @@
     height: 70%;
     object-fit: contain;
   }
-  
+
+
+  @mixin containercards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .cajitas{
+    @include containercards()
+  }

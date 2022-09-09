@@ -1,17 +1,41 @@
+.navbar-nav {
+  font-size: 16px;
+  justify-content: space-between;
+}
+
 .card {
   display: flex;
   margin-top: 10px;
-  text-align-last: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
+
 .image-card {
   width: 70%;
   height: 70%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
+
+.card {
+  display: flex;
+  margin-top: 10px;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+
+.image-card {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .pie-pagina {
   width: 100%;
   background-color: #0a141d;
 }
+
 .pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
@@ -21,6 +45,7 @@
   grid-gap: 50px;
   padding: 45px 0px;
 }
+
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
@@ -28,18 +53,22 @@
   justify-content: center;
   align-items: center;
 }
+
 .pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
+
 .pie-pagina .grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
+
 .pie-pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
+
 .pie-pagina .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
@@ -52,28 +81,34 @@
   text-align: center;
   transition: all 300ms ease;
 }
+
 .pie-pagina .grupo-1 .red-social a:hover {
   color: aqua;
 }
+
 .pie-pagina .grupo-2 {
   background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
+
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
 
-$redes: (
-  facebook: blue,
-  instagram: violet,
-  twitter: rgb(19, 140, 246),
-  youtube: red
-);
-
-@each $redsocial, $color in $redes {
-  .fa-#{$redsocial} {
-    background-color: $colorblue;
-  }
+.fa-facebook {
+  background-color: blue;
 }
+
+.fa-instagram {
+  background-color: violet;
+}
+
+.fa-twitter {
+  background-color: rgb(19, 140, 246);
+}
+
+.fa-youtube {
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
